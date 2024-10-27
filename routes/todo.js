@@ -25,7 +25,7 @@ todoRouter.get('/tasks', async(req,res) => {
     const todo = await Todo.find();
     return res.status(201).json(todo);
   } catch (e) {
-    res.status(500).json({erroe:e.message})
+    res.status(500).json({error:e.message})
   }
 });
 
